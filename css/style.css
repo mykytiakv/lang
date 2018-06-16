@@ -642,6 +642,11 @@ footer .col-lg-4 {
 .nav-item a:hover {
     color: #24bfdb !important;
 }
+.subs.row,
+.footer-content > .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 @media screen and (max-width: 1600px) {
     .money-parent {
         padding-bottom: 0;
