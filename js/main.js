@@ -14,10 +14,12 @@ function changeWidth() {
 		document.getElementsByClassName('l-screen')[0].style.display = 'none';
 		document.getElementsByClassName('r-screen')[0].style.display = 'none';
 		document.getElementsByClassName('screen-list-parent')[0].style.width = '100%';
+		document.getElementsByClassName('screen-list')[0].style.width = '100%';
 	} else {
 		document.getElementsByClassName('l-screen')[0].style.display = 'block';
 		document.getElementsByClassName('r-screen')[0].style.display = 'block';
 		document.getElementsByClassName('screen-list-parent')[0].style.width = '85%';
+		document.getElementsByClassName('screen-list')[0].style.width = '85%';
 	}
 }
 new WOW().init();
