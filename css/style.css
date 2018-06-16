@@ -81,9 +81,6 @@ header nav {
     width: 492px;
     height: 88px;
 }
-.navbar-brand {
-    margin-right: 0;
-}
 .log-in {
     margin-left: 5px;
     background-image: url('../images/log-in.png');
@@ -238,9 +235,9 @@ header.fixed {
 .green {
     color: #00ff0c;
 }
-.try {
-    padding-bottom: 75px;
-    padding-top: 65px;
+.try.container-fluid {
+    padding-bottom: 75px !important;
+    padding-top: 65px !important;
     background-color: #534753;
 }
 .try .main-t,
@@ -460,6 +457,7 @@ p.build-rotate {
     font-weight: bold;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 80px;
 }
 .categories img {
     margin-right: 10px;
@@ -481,7 +479,7 @@ p.build-rotate {
     cursor: pointer;
 }
 .subscribe {
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
     border-radius: 10px;
     background-color: #534753;
@@ -638,6 +636,9 @@ footer .col-lg-4 {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
+.navbar-brand {
+    margin-right: 0;
+}
 .nav-item a:hover {
     color: #24bfdb !important;
 }
@@ -734,7 +735,7 @@ footer .col-lg-4 {
     margin-bottom: 50px;
 }
 
-@media screen and (min-width: 1400px) { 
+@media screen and (min-width: 1150px) { 
     .subs > div > div {
         margin: 0;
         -ms-flex: 0 0 49%;
@@ -742,7 +743,9 @@ footer .col-lg-4 {
         max-width: 49%;
     }
     .subs > div {
-        margin: 0;
+        /* margin: 0; */
+        margin-left: 0;
+        margin-right: 0;
         padding: 0;
         justify-content: space-between;
     }
@@ -1092,8 +1095,22 @@ footer .col-lg-4 {
     .people-list p {
         font-size: 16px;
     }
+    .but {
+        padding-bottom: 60px;
+    }
+    .why-bloks > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container-fluid {
+        padding: 0 3.25% !important;
+    }
 }
 @media screen and (max-width: 600px) {
+    .navbar-brand {
+        width: 230px;
+        height: 41px;
+    }
     .subs > div {
         margin: 0 !important;
         padding: 0 !important;
@@ -1190,4 +1207,25 @@ footer .col-lg-4 {
     .screen-slider .slick-arrow img {
         width: 22px;
     }
+    .why-sub-main {
+        font-size: 26px;
+    }
+    .why-sub-main-g {
+        font-size: 24px;
+    }
+    .sell p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 424px) {
+    .try .main-t,
+    .sell .main-t,
+    .main-img .main-t {
+        font-size: 36px;
+    }
+    .f-button {
+        font-size: 19px;
+        padding: 11px 36px;
+    }
+
 }
