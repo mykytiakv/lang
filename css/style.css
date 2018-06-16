@@ -81,6 +81,9 @@ header nav {
     width: 492px;
     height: 88px;
 }
+.navbar-brand {
+    margin-right: 0;
+}
 .log-in {
     margin-left: 5px;
     background-image: url('../images/log-in.png');
